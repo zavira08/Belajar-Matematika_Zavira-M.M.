@@ -7,113 +7,130 @@
     <title>Home_Zavira M.M.</title>
 <style>
    body {
-                  font-family: 'Times New Roman', Times, serif;
-                  background-color: #a7cae8;
-                  margin: 0;
-                  padding: 0;
-                  background-image:  url('home.webp'); /* Ganti URL dengan foto Anda */
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        color: #f5f0f0; /* Warna teks untuk kontras */
-              }
-      .navbar {
-        background-color: #00bfff;
-      }
-      .navbar-brand, .nav-link {
-        color: #fff;
-      }
-      .nav-link:hover {
-        color: #ffeb3b;
-      }
-      .highlight {
-        background-color: #ffeb3b;
-        padding: 5px;
-        border-radius: 5px;
-        color: #333;
-        font-weight: bold;
-      }
-      .card {
-        margin-top: 20px;
-        border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      }
-      .card:hover {
-        transform: scale(1.05);
-        transition: all 0.3s ease-in-out;
-      }
-      .btn-primary {
-        background-color: #f5b0d1;
-        border: none;
-      }
-      .btn-primary:hover {
-        background-color: #d0f9ac;
-      }
-      .container {
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-        background-color: rgba(72, 98, 106, 0.7); /* Efek transparan untuk latar belakang */
-      text-align:center;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #a7cae8;
+      margin: 0;
+      padding: 0;
+      background-image: url('home.webp');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #f5f0f0;
+   }
+   .navbar {
+      background-color: #00bfff;
+   }
+   .navbar-brand, .nav-link {
+      color: #fff;
+   }
+   .nav-link:hover {
+      color: #ffeb3b;
+   }
+   .highlight {
+      background-color: #ffeb3b;
+      padding: 5px;
+      border-radius: 5px;
+      color: #333;
+      font-weight: bold;
+   }
+   .card {
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+   }
+   .card:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+   }
+   .btn-primary {
+      background-color: #f5b0d1;
+      border: none;
+   }
+   .btn-primary:hover {
+      background-color: #d0f9ac;
+   }
+   .container {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(72, 98, 106, 0.7);
+      text-align: center;
       font-size: 17px;
-      
-      }
+   }
+   .jumbotron {
+      background-image: url('math-background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 30px;
+   }
+   .jumbotron h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      color: #333;
+      background-color: #B0E0E6;
+      border-radius: 17px;
+      margin: 0 auto;
+      max-width: 90%;
+   }
+   .jumbotron p {
+      font-size: 20px;
+      margin-top: 20px;
+      background-color: #ADD8E6;
+      color: #000;
+      padding: 10px;
+      border-radius: 8px;
+      display: inline-block;
+      text-align: center;
+   }
+   .icon-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 40px;
+   }
+   .icon {
+      text-align: center;
+      margin: 10px;
+   }
+   .icon img {
+      width: 100px;
+      max-width: 100%;
+      margin-bottom: 10px;
+   }
+   .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+   }
+   .video-container iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+
+   @media (max-width: 768px) {
       .jumbotron {
-        background-image: url('math-background.jpg');
-        background-size: cover;
-        background-position: center;
-        color: white(238, 176, 176);
-        padding: 100px 20px;
-        text-align: center;
-        border-radius: 10px;
-        margin-bottom: 30px;
+         padding: 50px 10px;
       }
       .jumbotron h1 {
-        font-size: 3rem;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        color: #333;
-        background-color:#B0E0E6;
-        border-radius: 17px;
-        margin-left: 180px;
-        margin-right: 180px;
+         font-size: 2rem;
+         padding: 10px;
       }
       .jumbotron p {
-        font-size: 20px;
-        margin-top: 20px;
-        background-color: #ADD8E6;
-        color: #000;
-        padding: 10px;
-        border-radius: 8px;
-        display: inline-block;
-        text-align: center;
-      }
-      .icon-section {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 40px;
-      }
-      .icon {
-        text-align: center;
+         font-size: 16px;
       }
       .icon img {
-        width: 100px;
-        margin-bottom: 10px;
+         width: 80px;
       }
-      .video-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-      }
-      .video-container iframe {
-        width: 100%;
-        max-width: 560px;
-        height: 315px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
+   }
 </style>
 </head>
 <body>
@@ -136,7 +153,6 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="materispldv_latihan geogebra.html">Latihan Geogebra</a></li>
               <li><a class="dropdown-item" href="materispldv_latihan soal.html">Latihan Soal</a></li>
-              
             </ul>
           </li>
           <li class="nav-item">
@@ -166,7 +182,7 @@
     <p>Matematika membantu kita memahami dunia, berpikir kritis, dan memecahkan masalah. Yuk, pelajari SPLDV dengan cara yang seru dan interaktif!
     <br>
     Pada website Belajar Matematika, kami akan membahas materi sistem persamaan linear dua variabel (SPLDV). Sebelum mempelajari materi SPLDV, simaklah video youtube berikut ini.</p>
-    
+
     <div class="video-container mt-5">
       <iframe 
         src="https://www.youtube.com/embed/KAJ8ijTij4k?si=v669t1-Ajfvb7gDu" 
@@ -197,7 +213,7 @@
 
   </div>
 
-  <footer class="text-center mt-4"style="background-color:#E0E0E0;">
+  <footer class="text-center mt-4" style="background-color:#E0E0E0;">
     <b style=color:black>© 2024 Zavira Mardhatillah Maulidia | Universitas Mataram</b>
   </footer>
 
