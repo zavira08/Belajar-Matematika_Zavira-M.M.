@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Video Pembelajaran</title>
+<style>
+   body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #a7cae8;
+      margin: 0;
+      padding: 0;
+      background-image: url('home.webp');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #f5f0f0;
+   }
+   .navbar {
+      background-color: #00bfff;
+   }
+   .navbar-brand, .nav-link {
+      color: #fff;
+   }
+   .nav-link:hover {
+      color: #ffeb3b;
+   }
+   .highlight {
+      background-color: #ffeb3b;
+      padding: 5px;
+      border-radius: 5px;
+      color: #333;
+      font-weight: bold;
+   }
+   .card {
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+   }
+   .card:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+   }
+   .btn-primary {
+      background-color: #4c99af;
+      border: none;
+   }
+   .btn-primary:hover {
+      background-color: #d0f9ac;
+   }
+   .container {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(72, 98, 106, 0.7);
+      text-align: center;
+      font-size: 17px;
+   }
+   .jumbotron {
+      background-image: url('math-background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 30px;
+   }
+   .jumbotron h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      color: #333;
+      background-color: #B0E0E6;
+      border-radius: 17px;
+      margin: 0 auto;
+      max-width: 90%;
+   }
+   .jumbotron p {
+      font-size: 20px;
+      margin-top: 10px;
+      background-color: #ADD8E6;
+      color: #000;
+      padding: 5px;
+      border-radius: 8px;
+      display: inline-block;
+      text-align: center;
+   }
+   .icon-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 40px;
+   }
+   .icon {
+      text-align: center;
+      margin: 10px;
+   }
+   .icon img {
+      width: 100px;
+      max-width: 100%;
+      margin-bottom: 10px;
+   }
+   .video-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px; /* Jarak antar video */
+   margin-top: 30px;
+}
+.video-item {
+   width: 100%;
+   max-width: 560px;
+}
+
+   .video-container iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+
+   @media (max-width: 768px) {
+      .jumbotron {
+         padding: 50px 10px;
+      }
+      .jumbotron h1 {
+         font-size: 2rem;
+         padding: 10px;
+      }
+      .jumbotron p {
+         font-size: 16px;
+      }
+      .icon img {
+         width: 80px;
+      }
+   }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Belajar Matematika</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="materispldv_1 pendahuluan(home).html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="materispldvZavira.html">Materi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Video</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Latihan</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="materispldv_latihan geogebra.html">Latihan Geogebra</a></li>
+              <li><a class="dropdown-item" href="materispldv_latihan soal.html">Latihan Soal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="materispldv_kuiz.html">Kuis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="materispldv_profil.html">Profil</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cari Materi" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Cari</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+   <h2 style="background-color: #659dcd;">VIDEO PEMBELAJARAN SPLDV</h2>
+    <div class="video-container mt-5">
+        <p>1. Konsep SPLDV Bagian 1</p>
+        <div class="video-item">
+           <iframe src="https://www.youtube.com/embed/kzN0WloIH40" allowfullscreen></iframe>
+        </div>
+        <p>2. Konsep SPLDV Bagian 2</p>
+        <div class="video-item">
+           <iframe src="https://www.youtube.com/embed/qe3zQjSGZxQ" allowfullscreen></iframe>
+        </div>
+        <p>3. Konsep SPLDV Bagian 3</p>
+        <div class="video-item">
+           <iframe src="https://www.youtube.com/embed/1h6MymXxigY" allowfullscreen></iframe>
+        </div>
+        <p>4. Konsep SPLDV Bagian 4</p>
+        <div class="video-item">
+           <iframe src="https://www.youtube.com/embed/MZn9ydD6IbQ" allowfullscreen></iframe>
+        </div>
+        <p>5. Penyelesaian SPLDV Metode Grafik</p>
+        <div class="video-item">
+           <iframe src="https://www.youtube.com/embed/JacKF7_0XJ4" allowfullscreen></iframe>
+        </div>
+        <p>6. Penyelesaian SPLDV Metode Substitusi</p>
+        <div class="video-item">
+           <iframe src="https://www.youtube.com/embed/K3405zOFXaM" allowfullscreen></iframe>
+        </div>
+        <p>7. Penyelesaian SPLDV Metode Eliminasi</p>
+        <div class="video-item">
+           <iframe src="https://www.youtube.com/embed/Z7_xNwWh0TE" allowfullscreen></iframe>
+        </div>
+        <p>8. Penyelesaian SPLDV Metode Campuran</p>
+        <div class="video-item">
+           <iframe src="https://www.youtube.com/embed/ztfHTjmxQ6I" allowfullscreen></iframe>
+        </div>
+     </div>
+     
+<br>
+    <p class="text-center">Untuk memahami materi SPLDV lebih lanjut, Anda dapat mengakses materi, latihan soal, dan kuis yang ada di website ini.</p>
+
+
+
+  </div>
+
+          <div style="text-align: right;">
+            <a href="#" class="btn btn-primary">Kembali ke atas</a>
+        </div> 
+  
+  <footer class="text-center mt-4" style="background-color:#E0E0E0;">
+    <b style=color:black>© 2024 Zavira Mardhatillah Maulidia | Universitas Mataram</b>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
